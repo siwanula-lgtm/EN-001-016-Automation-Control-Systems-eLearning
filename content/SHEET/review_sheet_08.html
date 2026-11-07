@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet 08 - การประยุกต์ใช้ PLC ในงานควบคุมอัตโนมัติ</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">⚙️ Review Sheet หน่วยที่ 8 — การประยุกต์ใช้ PLC ในงานควบคุมอัตโนมัติ</div>
+      <div class="sub">EN-001-016 Automation Control Systems · PLC Applications in Automation Control</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 10 · ท 2 / ป 2 ชม. · CLO3<br>
+      ใบงานปฏิบัติ 1 ใบงาน
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📌</span> 1. สาระสำคัญ</div>
+        <div class="section-body">
+          <p>การประยุกต์ใช้ PLC ควรเริ่มจากการกำหนดกระบวนการ จัดทำรายการ I/O เขียนผังการทำงานและผังเวลา เขียนโปรแกรม จำลองและทดสอบกับเครื่องจริง ตัวอย่างงาน เช่น ควบคุมระดับน้ำ ประตูอัตโนมัติ และไฟบันได ใช้หลักการ Self-holding ไทเมอร์ และอินเตอร์ล็อกร่วมกัน และต้องมีการป้องกันความผิดปกติ เช่น สัญญาณเตือนและปุ่มหยุด</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 2. จุดประสงค์การเรียน (ทั่วไป)</div>
+        <div class="section-body">
+          <ul class="mini"><li>8.1 เข้าใจขั้นตอนการออกแบบระบบควบคุมด้วย PLC</li><li>8.2 ประยุกต์ความรู้ในหน่วยก่อนหน้าเขียนโปรแกรมควบคุมงานจริงได้</li><li>8.3 ออกแบบการป้องกันความผิดปกติและทดสอบระบบได้</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 3. หัวข้อเนื้อหาในหน่วย</div>
+        <div class="section-body">
+          <ul class="mini"><li>8.1 ขั้นตอนการออกแบบระบบควบคุมด้วย PLC</li><li>8.2 ระบบควบคุมระดับน้ำในถัง</li><li>8.3 การป้องกันความผิดปกติ</li><li>8.4 ประตูอัตโนมัติ</li><li>8.5 ไฟบันไดอัตโนมัติ</li><li>8.6 การทดสอบเดินเครื่องและเอกสารส่งมอบ</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📝</span> 4. บทสรุป</div>
+        <div class="section-body">
+          <p>การประยุกต์ใช้ PLC ควรเริ่มจากการกำหนดกระบวนการ จัดทำรายการ I/O เขียนผังการทำงานและผังเวลา เขียนโปรแกรม จำลองและทดสอบกับเครื่องจริง ตัวอย่างงาน เช่น ควบคุมระดับน้ำ ประตูอัตโนมัติ และไฟบันได ใช้หลักการ Self-holding ไทเมอร์ และอินเตอร์ล็อกร่วมกัน และต้องมีการป้องกันความผิดปกติ เช่น สัญญาณเตือนและปุ่มหยุด</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">❓</span> 5. คำถามทบทวน (จากแบบฝึกหัดท้ายหน่วย)</div>
+        <div class="section-body">
+          <ul class="mini"><li>จงเขียนขั้นตอนการออกแบบระบบ PLC 5 ขั้น</li><li>จงอธิบายว่าเหตุใดปั๊มในภาพที่ 8.4 ต้องมี Self-holding</li><li>ถ้าน้ำอยู่ระหว่าง LOW และ HIGH และเพิ่งเปิดระบบ ปั๊มจะทำงานหรือไม่</li><li>ถ้าปั๊มเติมน้ำจาก LOW ถึง HIGH ปกติ 90 วินาที ควรตั้งเวลาเตือนและ K เท่าใด (เผื่อ 50%)</li><li>จงเขียน IL ของวงจรปั๊มในภาพที่ 8.4</li><li>ประตูอัตโนมัติ: ถ้าต้องการค้างเปิด 5 วินาที ควรแก้ค่า K ของ T0 เป็นเท่าใด</li></ul>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อควรระวังด้านความปลอดภัย (ใบงานปฏิบัติ)</div>
+        <div class="section-body">
+          <ul class="mini"><li>ข้อควรระวังด้านความปลอดภัย: ตัดไฟก่อนต่อวงจรทุกครั้ง ตรวจขั้ว 24 V/0 V</li><li>เสนอการเพิ่มความปลอดภัยของระบบปั๊มอย่างน้อย 2 ข้อ</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🔧</span> 6. เชื่อมโยงกับใบงานปฏิบัติหน่วยเรียนที่ 8</div>
+        <div class="section-body">
+          <p><span class="accent">การทดลองควบคุมระดับน้ำในถังพร้อมสัญญาณเตือนด้วย GX Works3 / GX Simulator3</span><br>เวลาปฏิบัติ 2 ชั่วโมง · ทำแบบทดสอบหลังเรียนหน่วยที่ 8 หลังทบทวน</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-016 ระบบควบคุมอัตโนมัติ · อาจารย์ศิวณุ เหล่าบุตรสา · หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ภาคการศึกษาที่ 1</div>
+</div>
+</body>
+</html>

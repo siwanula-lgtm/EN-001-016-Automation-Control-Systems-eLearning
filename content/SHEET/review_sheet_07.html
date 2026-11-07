@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet 07 - การสื่อสารข้อมูลและเครือข่ายของ PLC</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">⚙️ Review Sheet หน่วยที่ 7 — การสื่อสารข้อมูลและเครือข่ายของ PLC</div>
+      <div class="sub">EN-001-016 Automation Control Systems · PLC Communication and Networks</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 9 · ท 2 / ป 2 ชม. · CLO2<br>
+      ใบงานปฏิบัติ 1 ใบงาน
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📌</span> 1. สาระสำคัญ</div>
+        <div class="section-body">
+          <p>การสื่อสารทำให้ PLC แลกเปลี่ยนข้อมูลกับพีซี HMI อินเวอร์เตอร์ และ PLC เครื่องอื่นได้ โดยต้องกำหนดมาตรฐานทางกายภาพ พารามิเตอร์ (เช่น IP address) และโปรโตคอลให้ตรงกันทั้งสองฝั่ง การแลกเปลี่ยนข้อมูลในโปรแกรมอาศัยแผนที่รีจิสเตอร์ที่ตกลงร่วมกัน และต้องตรวจสอบสถานะการสื่อสารเพื่อให้ระบบทำงานได้อย่างปลอดภัย</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 2. จุดประสงค์การเรียน (ทั่วไป)</div>
+        <div class="section-body">
+          <ul class="mini"><li>7.1 เข้าใจหลักการและมาตรฐานการสื่อสารข้อมูลของ PLC</li><li>7.2 กำหนดพารามิเตอร์เครือข่ายได้ถูกต้อง</li><li>7.3 ออกแบบแผนที่ข้อมูลและเขียนโปรแกรมแลกเปลี่ยนข้อมูลได้</li><li>7.4 ตรวจสอบและแก้ไขปัญหาการสื่อสารเบื้องต้นได้</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 3. หัวข้อเนื้อหาในหน่วย</div>
+        <div class="section-body">
+          <ul class="mini"><li>7.1 หลักการสื่อสารข้อมูลและมาตรฐานสัญญาณ</li><li>7.2 เครือข่าย PLC และอีเทอร์เน็ต</li><li>7.3 โปรโตคอล Modbus และ Master-Slave</li><li>7.4 การแลกเปลี่ยนข้อมูลด้วยรีจิสเตอร์</li><li>7.5 การตรวจสอบข้อผิดพลาดของการสื่อสาร</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📝</span> 4. บทสรุป</div>
+        <div class="section-body">
+          <p>การสื่อสารทำให้ PLC แลกเปลี่ยนข้อมูลกับพีซี HMI อินเวอร์เตอร์ และ PLC เครื่องอื่นได้ โดยต้องกำหนดมาตรฐานทางกายภาพ พารามิเตอร์ (เช่น IP address) และโปรโตคอลให้ตรงกันทั้งสองฝั่ง การแลกเปลี่ยนข้อมูลในโปรแกรมอาศัยแผนที่รีจิสเตอร์ที่ตกลงร่วมกัน และต้องตรวจสอบสถานะการสื่อสารเพื่อให้ระบบทำงานได้อย่างปลอดภัย</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">❓</span> 5. คำถามทบทวน (จากแบบฝึกหัดท้ายหน่วย)</div>
+        <div class="section-body">
+          <ul class="mini"><li>จงเปรียบเทียบ RS-232C และ RS-485 3 ประเด็น</li><li>อุปกรณ์ 3 เครื่องมี IP 192.168.1.5, 192.168.1.9, 192.168.2.9 (mask 255.255.255.0) เครื่องใดอยู่คนละเครือข่าย</li><li>เหตุใด IP address จึงต้องไม่ซ้ำกัน</li><li>จงอธิบายหน้าที่ของ 4 ฟิลด์ในเฟรม Modbus RTU</li><li>จงเขียน IL เมื่อกด X0 ให้ D1 = 1 และกด X1 ให้ D1 = 0</li><li>ถ้า D10 = 7 วงจร LD&gt;= D10 K10 → OUT Y1 ทำงานหรือไม่</li></ul>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อควรระวังด้านความปลอดภัย (ใบงานปฏิบัติ)</div>
+        <div class="section-body">
+          <ul class="mini"><li>ข้อควรระวังด้านความปลอดภัย: ตัดไฟก่อนต่อวงจรทุกครั้ง ตรวจขั้ว 24 V/0 V</li><li>เสนอแนวปฏิบัติด้านความปลอดภัยของเครือข่ายอย่างน้อย 2 ข้อ</li><li>2. เครือข่ายหรือระบบสื่อสารที่กลุ่มพบ และข้อสังเกตด้านความปลอดภัย</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🔧</span> 6. เชื่อมโยงกับใบงานปฏิบัติหน่วยเรียนที่ 7</div>
+        <div class="section-body">
+          <p><span class="accent">การทดลองออกแบบแผนที่ข้อมูลและแลกเปลี่ยนข้อมูลด้วยรีจิสเตอร์ใน GX Works3 / GX Simulator3</span><br>เวลาปฏิบัติ 2 ชั่วโมง · ทำแบบทดสอบหลังเรียนหน่วยที่ 7 หลังทบทวน</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-016 ระบบควบคุมอัตโนมัติ · อาจารย์ศิวณุ เหล่าบุตรสา · หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ภาคการศึกษาที่ 1</div>
+</div>
+</body>
+</html>

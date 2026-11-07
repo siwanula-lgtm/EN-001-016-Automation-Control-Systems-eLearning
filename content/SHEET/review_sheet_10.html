@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet 10 - ระบบสายพานลำเลียงและบรรจุภัณฑ์ พร้อมทบทวนและสรุปรายวิชา</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">⚙️ Review Sheet หน่วยที่ 10 — ระบบสายพานลำเลียงและบรรจุภัณฑ์ พร้อมทบทวนและสรุปรายวิชา</div>
+      <div class="sub">EN-001-016 Automation Control Systems · Conveyor and Packaging System with Course Review</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 13–16 · ท 8 / ป 8 ชม. · CLO2, CLO3, CLO4<br>
+      ใบงานปฏิบัติ 1 ใบงาน
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📌</span> 1. สาระสำคัญ</div>
+        <div class="section-body">
+          <p>ระบบสายพานลำเลียงและบรรจุภัณฑ์รวมความรู้เรื่องลอจิก ไทเมอร์ เคาน์เตอร์ การควบคุมแบบลำดับ และการเชื่อมต่อ I/O เข้าด้วยกัน โดยแบ่งกระบวนการเป็นขั้นตอน (สายพานทำงานและนับ → ปิดผนึก → แจ้งเสร็จ) ใช้ SET/RST ของรีเลย์ขั้นตอนเปลี่ยนสถานะ ใช้เคาน์เตอร์นับชิ้นงานและไทเมอร์กำหนดเวลา พร้อมวงจรเริ่ม/หยุดที่ปลอดภัย และหน่วยนี้ทบทวนเนื้อหาทั้งรายวิชาเพื่อเตรียมสอบ</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 2. จุดประสงค์การเรียน (ทั่วไป)</div>
+        <div class="section-body">
+          <ul class="mini"><li>10.1 บูรณาการความรู้ในรายวิชาเพื่อออกแบบระบบสายพานลำเลียงและบรรจุภัณฑ์</li><li>10.2 เขียนโปรแกรมควบคุมแบบลำดับที่ใช้ไทเมอร์และเคาน์เตอร์ได้</li><li>10.3 ทบทวนและสรุปองค์ความรู้ทั้งรายวิชาตาม CLO</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 3. หัวข้อเนื้อหาในหน่วย</div>
+        <div class="section-body">
+          <ul class="mini"><li>10.1 ระบบสายพานลำเลียงและบรรจุภัณฑ์</li><li>10.2 การแบ่งขั้นตอนและโปรแกรมลำดับ</li><li>10.3 ขั้นตอนปิดผนึกและแจ้งสถานะ</li><li>10.4 การเริ่มและหยุด</li><li>10.5 ทบทวนและสรุปเนื้อหารายวิชา</li><li>10.6 แนวทางเตรียมสอบ</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📝</span> 4. บทสรุป</div>
+        <div class="section-body">
+          <p>ระบบสายพานลำเลียงและบรรจุภัณฑ์รวมความรู้เรื่องลอจิก ไทเมอร์ เคาน์เตอร์ การควบคุมแบบลำดับ และการเชื่อมต่อ I/O เข้าด้วยกัน โดยแบ่งกระบวนการเป็นขั้นตอน (สายพานทำงานและนับ → ปิดผนึก → แจ้งเสร็จ) ใช้ SET/RST ของรีเลย์ขั้นตอนเปลี่ยนสถานะ ใช้เคาน์เตอร์นับชิ้นงานและไทเมอร์กำหนดเวลา พร้อมวงจรเริ่ม/หยุดที่ปลอดภัย และหน่วยนี้ทบทวนเนื้อหาทั้งรายวิชาเพื่อเตรียมสอบ</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">❓</span> 5. คำถามทบทวน (จากแบบฝึกหัดท้ายหน่วย)</div>
+        <div class="section-body">
+          <ul class="mini"><li>จงระบุขั้นตอน (State) ของระบบบรรจุภัณฑ์ในหน่วยนี้</li><li>ถ้าต้องการบรรจุ 8 ชิ้นต่อกล่อง ต้องแก้ค่าใด</li><li>ปิดผนึก 5 วินาที ต้องตั้ง T0 เท่าใด</li><li>เพราะเหตุใดต้องมี RST C0 ตอนจบรอบ</li><li>จงเขียน IL ของขั้น S1 ในภาพที่ 10.5</li><li>ถ้า X1 ต่อ NC สายขาดขณะทำงาน ระบบจะเกิดอะไร</li></ul>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อควรระวังด้านความปลอดภัย (ใบงานปฏิบัติ)</div>
+        <div class="section-body">
+          <ul class="mini"><li>ข้อควรระวังด้านความปลอดภัย: ตัดไฟก่อนต่อวงจรทุกครั้ง ตรวจขั้ว 24 V/0 V</li><li>ในโปรแกรมไม่ใช่วงจรความปลอดภัย ต้องมีฮาร์ดแวร์ตัดกำลัง (5) ไทเมอร์ตรวจสายพานค้าง,</li><li>หัวข้ออภิปราย: &quot;ถ้านำระบบนี้ไปใช้จริงต้องเพิ่มระบบความปลอดภัยและการแจ้งเตือนอะไรบ้าง&quot;</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🔧</span> 6. เชื่อมโยงกับใบงานปฏิบัติหน่วยเรียนที่ 10</div>
+        <div class="section-body">
+          <p><span class="accent">การทดลองระบบสายพานลำเลียงและบรรจุภัณฑ์ด้วย GX Works3 / GX Simulator3</span><br>เวลาปฏิบัติ 8 ชั่วโมง · ทำแบบทดสอบหลังเรียนหน่วยที่ 10 หลังทบทวน</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-016 ระบบควบคุมอัตโนมัติ · อาจารย์ศิวณุ เหล่าบุตรสา · หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ภาคการศึกษาที่ 1</div>
+</div>
+</body>
+</html>

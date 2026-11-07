@@ -1,0 +1,8 @@
+services:
+  automation-elearning:
+    build: .
+    image: en-001-016-automation-elearning:latest
+    container_name: en-001-016-automation-elearning
+    ports:
+      - "8050:3000"
+    restart: unless-stopped

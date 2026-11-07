@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet 06 - ระบบอินพุต/เอาต์พุตและการเชื่อมต่อ PLC กับอุปกรณ์ภายนอก</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">⚙️ Review Sheet หน่วยที่ 6 — ระบบอินพุต/เอาต์พุตและการเชื่อมต่อ PLC กับอุปกรณ์ภายนอก</div>
+      <div class="sub">EN-001-016 Automation Control Systems · I/O Systems and External Interfacing</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 6–7 · ท 4 / ป 4 ชม. · CLO2, CLO3<br>
+      ใบงานปฏิบัติ 1 ใบงาน
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📌</span> 1. สาระสำคัญ</div>
+        <div class="section-body">
+          <p>ระบบอินพุต/เอาต์พุตเป็นส่วนเชื่อมต่อระหว่าง CPU ของ PLC กับอุปกรณ์สนาม การเลือกอุปกรณ์อินพุตและชนิดเซนเซอร์ NPN/PNP ต้องสอดคล้องกับการต่อขั้ว S/S ของอินพุต การเลือกเอาต์พุตแบบรีเลย์หรือทรานซิสเตอร์ขึ้นกับชนิดและขนาดของโหลด โหลดเหนี่ยวนำต้องมีวงจรป้องกัน การต่อปุ่มหยุดและปุ่มฉุกเฉินแบบ NC ช่วยให้ระบบปลอดภัยเมื่อสายขาด และการตรวจสอบ I/O อย่างเป็นลำดับช่วยให้ค้นหาข้อผิดพลาดได้รวดเร็ว</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 2. จุดประสงค์การเรียน (ทั่วไป)</div>
+        <div class="section-body">
+          <ul class="mini"><li>6.1 เข้าใจโครงสร้างระบบอินพุต/เอาต์พุตของ PLC</li><li>6.2 เลือกอุปกรณ์อินพุตและเอาต์พุตให้เหมาะสมกับงาน</li><li>6.3 ต่อวงจรเชื่อมต่อ PLC กับเซนเซอร์และโหลดได้อย่างปลอดภัย</li><li>6.4 ตรวจสอบและแก้ไขข้อผิดพลาดของ I/O ได้</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 3. หัวข้อเนื้อหาในหน่วย</div>
+        <div class="section-body">
+          <ul class="mini"><li>6.1 โครงสร้างระบบอินพุต/เอาต์พุต</li><li>6.2 อุปกรณ์อินพุตและการเลือกเซนเซอร์</li><li>6.3 เซนเซอร์ NPN/PNP และการต่ออินพุต</li><li>6.4 เอาต์พุตและการต่อโหลด</li><li>6.5 วงจรควบคุมมอเตอร์ Fail-safe และปุ่มหยุดฉุกเฉิน</li><li>6.6 การนับด้วยเซนเซอร์ รายการ I/O และการตรวจสอบข้อผิดพลาด</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📝</span> 4. บทสรุป</div>
+        <div class="section-body">
+          <p>ระบบอินพุต/เอาต์พุตเป็นส่วนเชื่อมต่อระหว่าง CPU ของ PLC กับอุปกรณ์สนาม การเลือกอุปกรณ์อินพุตและชนิดเซนเซอร์ NPN/PNP ต้องสอดคล้องกับการต่อขั้ว S/S ของอินพุต การเลือกเอาต์พุตแบบรีเลย์หรือทรานซิสเตอร์ขึ้นกับชนิดและขนาดของโหลด โหลดเหนี่ยวนำต้องมีวงจรป้องกัน การต่อปุ่มหยุดและปุ่มฉุกเฉินแบบ NC ช่วยให้ระบบปลอดภัยเมื่อสายขาด และการตรวจสอบ I/O อย่างเป็นลำดับช่วยให้ค้นหาข้อผิดพลาดได้รวดเร็ว</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">❓</span> 5. คำถามทบทวน (จากแบบฝึกหัดท้ายหน่วย)</div>
+        <div class="section-body">
+          <ul class="mini"><li>จงยกตัวอย่างอุปกรณ์อินพุต 3 ชนิดและเอาต์พุต 3 ชนิดของสายพานลำเลียง</li><li>ชิ้นงานเป็นเหล็กและพลาสติกปะปนกัน ต้องการแยกเฉพาะเหล็ก ควรเลือกเซนเซอร์ใด เพราะเหตุใด</li><li>เซนเซอร์ NPN ต่อเข้าอินพุตของ PLC ต้องต่อ S/S อย่างไร (ตามตารางในหน่วย) และถ้าต่อผิดจะเกิดอะไร</li><li>จงเปรียบเทียบเอาต์พุตรีเลย์กับทรานซิสเตอร์ 3 ประเด็น</li><li>คอยล์คอนแทกเตอร์ 24 VDC กินกระแส 200 mA ถ้าเอาต์พุตรับได้ 0.5 A ต่อจุด ต่อตรงได้หรือไม่ และต้องเพิ่มอุปกรณ์ใด</li><li>จงเขียน IL ของวงจรสตาร์ต/สต็อป Y0 เมื่อ START = X0 (NO), STOP = X1 (NC) , OL = X2 (NC)</li></ul>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อควรระวังด้านความปลอดภัย (ใบงานปฏิบัติ)</div>
+        <div class="section-body">
+          <ul class="mini"><li>ข้อควรระวังด้านความปลอดภัย: ตัดไฟก่อนต่อวงจรทุกครั้ง ตรวจขั้ว 24 V/0 V</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🔧</span> 6. เชื่อมโยงกับใบงานปฏิบัติหน่วยเรียนที่ 6</div>
+        <div class="section-body">
+          <p><span class="accent">การทดลองเชื่อมต่อเซนเซอร์และโหลดกับ PLC ด้วย GX Works3 / GX Simulator3</span><br>เวลาปฏิบัติ 4 ชั่วโมง · ทำแบบทดสอบหลังเรียนหน่วยที่ 6 หลังทบทวน</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-016 ระบบควบคุมอัตโนมัติ · อาจารย์ศิวณุ เหล่าบุตรสา · หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ภาคการศึกษาที่ 1</div>
+</div>
+</body>
+</html>

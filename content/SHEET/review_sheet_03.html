@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet 03 - คำสั่งพื้นฐานของ PLC</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">⚙️ Review Sheet หน่วยที่ 3 — คำสั่งพื้นฐานของ PLC</div>
+      <div class="sub">EN-001-016 Automation Control Systems · Basic PLC Instructions</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 3 · ท 2 / ป 2 ชม. · CLO3<br>
+      ใบงานปฏิบัติ 1 ใบงาน
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📌</span> 1. สาระสำคัญ</div>
+        <div class="section-body">
+          <p>คำสั่งพื้นฐานของ PLC คือชุดคำสั่งที่ใช้แปลงตรรกะควบคุมเป็นโปรแกรม Ladder และรายการคำสั่ง (Instruction List) ได้แก่ LD, LDI, AND, ANI, OR, ORI, OUT สำหรับเงื่อนไขและเอาต์พุต ANB, ORB, INV และ MPS/MRD/MPP สำหรับจัดการบล็อกและสาขา SET, RST, ZRST สำหรับเก็บและล้างสถานะ และ PLS, PLF สำหรับตรวจจับขอบสัญญาณ PLC ประมวลผลโปรแกรมจากบนลงล่างและซ้ายไปขวาเป็นรอบสแกน อุปกรณ์ที่ถูกเขียนค่าท้ายสุดในรอบสแกนจะเป็นค่าที่มีผล ผู้ปฏิบัติงานจึงต้องเข้าใจลำดับแถวเพื่อออกแบบวงจร Self-holding, Interlock และ Toggle ให้ทำงานถูกต้องและปลอดภัย</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 2. จุดประสงค์การเรียน (ทั่วไป)</div>
+        <div class="section-body">
+          <ul class="mini"><li>3.1 เข้าใจภาษา Ladder อุปกรณ์ และลำดับการประมวลผลของ PLC</li><li>3.2 ใช้คำสั่งพื้นฐานของ PLC เขียนโปรแกรมควบคุมได้ถูกต้อง</li><li>3.3 เข้าใจและออกแบบวงจร Self-holding, Interlock และ Toggle ได้</li><li>3.4 เขียน ทดสอบ และตรวจสอบโปรแกรมด้วย GX Works3 / GX Simulator3 ได้</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 3. หัวข้อเนื้อหาในหน่วย</div>
+        <div class="section-body">
+          <ul class="mini"><li>3.1 ภาษา Ladder อุปกรณ์ และการประมวลผลโปรแกรม</li><li>3.2 คำสั่ง LD, LDI, AND, ANI, OR, ORI และ OUT</li><li>3.3 คำสั่งรวมบล็อกและแยกสาขา: ANB, ORB, INV, MPS/MRD/MPP</li><li>3.4 คำสั่ง SET, RST และ ZRST</li><li>3.5 คำสั่งตรวจจับขอบสัญญาณ PLS และ PLF</li><li>3.6 Self-holding, Interlock, Toggle และ Double coil</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📝</span> 4. บทสรุป</div>
+        <div class="section-body">
+          <p>คำสั่งพื้นฐานของ PLC คือชุดคำสั่งที่ใช้แปลงตรรกะควบคุมเป็นโปรแกรม Ladder และรายการคำสั่ง (Instruction List) ได้แก่ LD, LDI, AND, ANI, OR, ORI, OUT สำหรับเงื่อนไขและเอาต์พุต ANB, ORB, INV และ MPS/MRD/MPP สำหรับจัดการบล็อกและสาขา SET, RST, ZRST สำหรับเก็บและล้างสถานะ และ PLS, PLF สำหรับตรวจจับขอบสัญญาณ PLC ประมวลผลโปรแกรมจากบนลงล่างและซ้ายไปขวาเป็นรอบสแกน อุปกรณ์ที่ถูกเขียนค่าท้ายสุดในรอบสแกนจะเป็นค่าที่มีผล ผู้ปฏิบัติงานจึงต้องเข้าใจลำดับแถวเพื่อออกแบบวงจร Self-holding, Interlock และ Toggle ให้ทำงานถูกต้องและปลอดภัย</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">❓</span> 5. คำถามทบทวน (จากแบบฝึกหัดท้ายหน่วย)</div>
+        <div class="section-body">
+          <ul class="mini"><li>เขียนรายการคำสั่งของ Y0 = (X0 + X1) · X̅2 · X3 (X0, X1 ต่อขนานกัน)</li><li>จากรายการคำสั่ง LD X0 / AND X1 / LD X2 / AND X3 / ORB / OUT Y0 จงเขียนนิพจน์บูลีนของ Y0</li><li>จงเขียนรายการคำสั่งและอธิบาย Ladder ของ Y1 = (X0 + X1)·(X2 + X3)</li><li>จงเขียนโปรแกรมของเกต NAND สองอินพุต Y0 = (X0·X1)̅ โดยใช้ INV และโดยใช้เดอมอร์แกน (หน้าสัมผัส NC)</li><li>มอเตอร์ใช้ START (X0, NO), STOP (X1, ต่อแบบ NC), โอเวอร์โหลด (X2, ต่อแบบ NC) ออกแบบ Self-holding ขับ Y0 แบบ …</li><li>โปรแกรมมีแถว LD X0 / SET Y1 และแถว LD X1 / RST Y1 (แถว RST อยู่หลัง) จงบอกค่า Y1 เมื่อ (X0,X1) = (1,0), …</li></ul>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อควรระวังด้านความปลอดภัย (ใบงานปฏิบัติ)</div>
+        <div class="section-body">
+          <ul class="mini"><li>ข้อควรระวังด้านความปลอดภัย: ตัดไฟก่อนต่อวงจรทุกครั้ง ตรวจขั้ว 24 V/0 V</li><li>และข้อดีด้านความปลอดภัยคืออะไร</li><li>หัวข้ออภิปราย: &quot;เหตุใดงานที่เกี่ยวข้องกับความปลอดภัยจึงควรใช้ Stop priority และปุ่ม</li></ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🔧</span> 6. เชื่อมโยงกับใบงานปฏิบัติหน่วยเรียนที่ 3</div>
+        <div class="section-body">
+          <p><span class="accent">การเขียนโปรแกรมเดินหน้า–ถอยหลังด้วย Self-holding และ Interlock และวงจรสลับสถานะ/SET/ZRST บน PLC FX5U</span><br>เวลาปฏิบัติ 2 ชั่วโมง · ทำแบบทดสอบหลังเรียนหน่วยที่ 3 หลังทบทวน</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-016 ระบบควบคุมอัตโนมัติ · อาจารย์ศิวณุ เหล่าบุตรสา · หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ภาคการศึกษาที่ 1</div>
+</div>
+</body>
+</html>
