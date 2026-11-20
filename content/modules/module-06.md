@@ -96,7 +96,7 @@ PLC เพียงอย่างเดียว
 
 (ที่มา: ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.))
 
-![ภาพที่ 6.10 ตัวอย่างรายการ I/O ของใบงานที่ 6](/images/book/a16_image103.png)
+![ภาพที่ 6.10 ตัวอย่างรายการ I/O ของใบงานที่ 6.1](/images/book/a16_image103.png)
 
 (ที่มา: ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.))
 
@@ -349,6 +349,6 @@ Mitsubishi Electric Corporation. (n.d.). Your first PLC \[คู่มือ\].
 
 | 6.9      | การตรวจจับขอบสัญญาณเซนเซอร์ด้วย PLS แล้วนับ    | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
 
-| 6.10     | ตัวอย่างรายการ I/O ของใบงานที่ 6             | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
+| 6.10     | ตัวอย่างรายการ I/O ของใบงานที่ 6.1             | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
 
 | 6.11     | ลำดับการตรวจสอบข้อผิดพลาดของ I/O            | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
