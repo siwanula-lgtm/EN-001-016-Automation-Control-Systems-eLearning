@@ -151,7 +151,7 @@ Mitsubishi Electric Corporation. (n.d.). Your first PLC \[คู่มือ\].
 | 6.7      | วงจรสตาร์ต/สต็อปคอยล์คอนแทกเตอร์ Y0          | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
 | 6.8      | ปุ่มหยุดฉุกเฉินต่อแบบ NC และใช้เป็น NO ในโปรแกรม | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
 | 6.9      | การตรวจจับขอบสัญญาณเซนเซอร์ด้วย PLS แล้วนับ    | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
-| 6.10     | ตัวอย่างรายการ I/O ของใบงานที่ 6             | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
+| 6.10     | ตัวอย่างรายการ I/O ของใบงานที่ 6.1           | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
 | 6.11     | ลำดับการตรวจสอบข้อผิดพลาดของ I/O            | ผู้จัดทำ อ้างอิงแนวคิดจาก Mitsubishi Electric Corporation (n.d.) |
 
 ### กิจกรรมเสนอแนะ
